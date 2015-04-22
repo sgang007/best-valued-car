@@ -1,14 +1,13 @@
 language:
-	- cpp
-compile:
-	- g++
-
+    - cpp
+compiler:
+    - gcc
 notifications:
-	email:
-	    recipients:
-	      - gangulyshubhojyoti@gmail.com
-	      - shubho.important@gmail.com
-	    on_success: change #[always|never|change] # default: change
-	    on_failure: change #[always|never|change] # default: always
+    email:
+        recipients:
+            - gangulyshubhojyoti@gmail.com
+            - shubho.important@gmail.com
+        on_success: change #[always|never|change] # default: change
+        on_failure: change #[always|never|change] # default: always
 script:
-	- make 
+    - make 
