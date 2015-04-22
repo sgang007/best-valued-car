@@ -8,15 +8,15 @@ int main(int argc, char const *argv[])
 	best_car b(data);
 
 	//Accept input from user: luxury based cars or budget-value cars
-	std::cout<<'Choose the type of car you are looking for:'
-	std::cout<<'\n1. Best Value cars \n2. Luxury model cars\nChoose 1 or 2 ?'
+	std::cout<<"Choose the type of car you are looking for:"
+	std::cout<<"\n1. Best Value cars \n2. Luxury model cars\nChoose 1 or 2 ?"
 	std::cin>>model;
 
 	//Initialize object with engineer's design cost matrix
 	b.init(model);
 	
 	//Get most valuable attribute from consumer
-	std::cout<<'\nWhat is your biggest priority?\n1. Safety\n2. Fuel Efficiency\n3. Cost\nChoose(1/2/3) ?'
+	std::cout<<"\nWhat is your biggest priority?\n1. Safety\n2. Fuel Efficiency\n3. Cost\nChoose(1/2/3) ?"
 	std::cin>>best_attrib;
 
 	//Start thread for decision tree search
